@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<definitions name="FedExTrackerService" targetNamespace="http://www.xmethods.net/sd/FedExTrackerService.wsdl" xmlns:tns="http://www.xmethods.net/sd/FedExTrackerService.wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+	<message name="statusRequest">
+		<part name="trackingNumber" type="xsd:string"/>
+	</message>
+	<message name="statusResponse">
+		<part name="return" type="xsd:string"/>
+	</message>
+	<portType name="FedExTrackerPortType">
+		<operation name="getStatus">
+			<input message="tns:statusRequest" />
+			<output message="tns:statusResponse" />
+		</operation>
+	</portType>
+	<binding name="FedExTrackerBinding" type="tns:FedExTrackerPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getStatus">
+			<soap:operation soapAction="urn:xmethodsFedEx#getStatus"/>
+			<input>
+				<soap:body use="encoded" namespace="urn:xmethodsFedEx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:xmethodsFedEx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="FedExTrackerService">
+		<documentation>Provides access to a variety of FedEx delivery status information</documentation>
+		<port name="FedExTrackerPort" binding="tns:FedExTrackerBinding">
+			<soap:address location="http://services.xmethods.net:80/perl/soaplite.cgi"/>
+		</port>
+	</service>
+</definitions>

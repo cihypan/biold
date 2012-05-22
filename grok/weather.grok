@@ -1,0 +1,23 @@
+# $Id: weather.grok,v 1.1 2003/04/29 19:35:55 idcmp Exp $
+EI don't know.  Why don't you look out the window?
+Uhttp://text.www.weatheroffice.ec.gc.ca/forecast/city_e.html?{arg0}&b_templatePrint=true
+EI don't know.  Why don't you fly to {args} and let us know?
+X600
+T/tmp/weather-{arg0}.html
+*
+S<br clear="all">
+Smscc
+Sh1>
+Vwhere
+C<
+Sstrong>Condition
+S>
+S:
+Vcondition
+C<
+Sstrong>Temp
+S>
+S:
+Vtemp
+C&deg
+OWeather for {where}, {condition} - {temp} degrees.

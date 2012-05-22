@@ -1,0 +1,12 @@
+# $Id: cbc.grok,v 1.1 2003/04/27 16:44:27 idcmp Exp $
+EGet lost there eh!
+Uhttp://www.cbc.ca/
+X600
+T/tmp/cbc.html
+*
+STOP STORIES
+S<span
+S>
+Vheadline
+C<
+OCBC: {headline}

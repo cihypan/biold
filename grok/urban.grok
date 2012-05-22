@@ -1,0 +1,12 @@
+# $Id: urban.grok,v 1.4 2003/05/21 00:54:38 idcmp Exp $
+#
+ENo definition for {args} found.
+Uhttp://www.urbandictionary.com/define.php?term={args}
+X86400
+T/tmp/urban-{args}.html
+*
+S<div class="definition">
+Vdefinition
+C</div>
+O{args}: {definition}
+# (1 of {count})

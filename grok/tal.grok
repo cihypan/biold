@@ -1,0 +1,24 @@
+# $Id: tal.grok,v 1.1 2003/04/28 03:00:22 idcmp Exp $
+ETal's smart!  Tal's sleeping! (sssh)
+Uhttp://www.digitalprose.com/
+X600
+T/tmp/dp.html
+*
+Sname="search"
+Sphoto
+S<p>
+S<a href
+S>
+S[
+Vtitle
+C]
+S</div>
+Voneliner
+C<
+Sdate"
+Vdate
+S>
+S[
+C]
+OFrom {date}, Tal talks about {title}: {oneliner}
+

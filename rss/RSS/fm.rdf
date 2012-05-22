@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rss PUBLIC "-//Netscape Communications//DTD RSS 0.91//EN"
+"http://freshmeat.net/backend/rss-0.91.dtd">
+<rss version="0.91">
+  <channel>
+    <copyright>Copyright 1997-2001 Open Source Development Network</copyright>
+    <pubDate>Sun, 10 Jun 2001 19:50:15 GMT</pubDate>
+    <lastBuildDate>Sun, 10 Jun 2001 19:50:15 GMT</lastBuildDate>
+    <docs>http://freshmeat.net/faq/</docs>
+    <description>The one-stop-shop for all your Linux software needs</description>
+    <link>http://freshmeat.net/</link>
+    <title>freshmeat.net</title>
+    <image>
+      <link>http://freshmeat.net/</link>
+      <title>freshmeat.net</title>
+      <url>http://freshmeat.net/img/fm-logo-my-netscape.jpg</url>
+      <width>90</width>
+      <height>36</height>
+    </image>
+    <managingEditor>scoop@freshmeat.net (Patrick Lenz)</managingEditor>
+    <webMaster>scoop@freshmeat.net (Patrick Lenz)</webMaster>
+    <language>en-us</language>
+    <item>
+      <title>Sensors Watch 0.0.2 (Default)</title>
+      <link>http://freshmeat.net/releases/50127/</link>
+      <description>A daemon that monitors lm_sensors and executes commands.</description>
+    </item>
+    <item>
+      <title>SecPanel 0.31 (Default)</title>
+      <link>http://freshmeat.net/releases/50126/</link>
+      <description>A visual SSH and SCP interface for UNIX environments.</description>
+    </item>
+    <item>
+      <title>libpng 1.0.12 (Default)</title>
+      <link>http://freshmeat.net/releases/50118/</link>
+      <description></description>
+    </item>
+    <item>
+      <title>doxygen 1.2.8.1 (Default)</title>
+      <link>http://freshmeat.net/releases/50125/</link>
+      <description>A documentation system for C++, Java, C and IDL</description>
+    </item>
+    <item>
+      <title>cdbackup 0.6.0 (Default)</title>
+      <link>http://freshmeat.net/releases/50123/</link>
+      <description>cd-r(w) backup utility</description>
+    </item>
+    <item>
+      <title>Integrity Checking Utility 0.5 (Development)</title>
+      <link>http://freshmeat.net/releases/50122/</link>
+      <description>Allows execution of AIDE filesystem integrity checks on remote hosts.</description>
+    </item>
+    <item>
+      <title>pngcrush 1.5.5 (Default)</title>
+      <link>http://freshmeat.net/releases/50121/</link>
+      <description>An optimizer for PNG files that can also insert or delete specified chunks.</description>
+    </item>
+    <item>
+      <title>The HT Editor 0.4.4c (Default)</title>
+      <link>http://freshmeat.net/releases/50117/</link>
+      <description>A file editor/viewer/analyzer for executables.</description>
+    </item>
+    <item>
+      <title>Quick and Dirty Game Development Framework 0.6.2 (Default)</title>
+      <link>http://freshmeat.net/releases/50083/</link>
+      <description>Libraries for rapid, cross-platform game development.</description>
+    </item>
+    <item>
+      <title>Jode 1.1 (Default)</title>
+      <link>http://freshmeat.net/releases/50116/</link>
+      <description>A Java package containing a decompiler and an obfuscator.</description>
+    </item>
+    <textinput>
+      <title>quick finder</title>
+      <description>Use the text input below to search the freshmeat application database</description>
+      <name>q</name>
+      <link>http://freshmeat.net/search/</link>
+    </textinput>
+  </channel>
+</rss>

@@ -1,0 +1,16 @@
+# $Id: sun.grok,v 1.1 2003/04/24 17:09:11 idcmp Exp $
+EDoing that can make you go blind!
+Uhttp://www.cmpsolv.com/cgi-bin/sunset?page=bob&exper=new99&loctype=ID&loc=CYOW&date=&tz=Local&tzcustom=&q=&aviation=yes&day1=yes&colors=white&datefmt=0
+X3600
+T/tmp/sunset.html
+*
+SFor
+Vdate
+S,
+C200
+SSunrise:
+Vsunrise
+CSunset:
+Vsunset
+CCivil
+OIn Ottawa, sunrise is at {sunrise} and sunset is {sunset} for {date}.

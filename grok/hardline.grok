@@ -1,0 +1,15 @@
+# $Id: hardline.grok,v 1.1 2003/04/25 20:13:01 idcmp Exp $
+EKicking it old school.
+Uhttp://www.hardline.org/?p=m
+X3600
+T/tmp/hardline.html
+*
+Sdeleria
+SnewsTitle
+S>
+Vwhen
+C<
+S<p>
+Vcontent
+C<
+O{when}: {content}

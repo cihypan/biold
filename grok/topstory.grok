@@ -1,0 +1,14 @@
+# $Id: topstory.grok,v 1.2 2003/04/25 20:13:01 idcmp Exp $
+EAren't you nosy!
+Uhttp://news.google.com/
+X3600
+T/tmp/googlenews.html
+*
+SAuto-generated
+S</noscript>
+Sclass=y
+S</font>
+S<BR>
+Vheader
+C<
+O{header}

@@ -1,0 +1,42 @@
+<?php
+
+header("Content-type: text/plain");
+$file = 'slashdot.rdf';
+$data = implode("",file($file));
+
+/*
+	An example of the "simple" flag - rss 0.9-simple is used by some sites
+	instead of RSS-0.91. The difference is that compliant 0.91 encapsulates
+	all <items> within their own <channels> where-as "simple" rdf files have
+	all their items *outside* the channel definition. A "simple" example:
+
+    <channel>
+       <some>stuff here</some>
+	</channel>
+
+    <item>
+       <blah>stuff</blah>
+    <item>
+
+    etc etc..
+
+	A little weird, but slashdot uses it, and I figured if you couldn't
+	parse slashdot's feed with this class I'd be burned at the stake so...
+
+*/
+
+include("class.RSS.php");
+$rss = new RSS ($data,1);	// "simple" flag as second argument, set to
+							// any non-zero value to activate
+$allItems = $rss->getAllItems();
+$itemCount = count($allItems);
+
+for($y=0;$y<$itemCount;$y++)
+{
+	print "\nItem [$y] has data\n";
+	print "[$y]: Title: " . $allItems[$y]['TITLE'];
+	print "\n[$y]: Link : " . $allItems[$y]['LINK'];
+	print "\n[$y]: Desc : " . $allItems[$y]['DESCRIPTION'];
+}
+    
+?>

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<skin background="Blank.jpg">
+<skinsize>800,600</skinsize>
+<usedefault>True</usedefault>
+
+<eventbutton>
+  <imagename>rectangle</imagename>
+  <location>33,103,681,230</location>
+  <navitem>False</navitem>
+  <font>Arial,0.9765625%,regular</font>
+  <keepaspectratio>False</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>rectangle</imagename>
+  <location>70,339,643,243</location>
+  <navitem>False</navitem>
+  <font>Arial,0.9765625%,regular</font>
+  <keepaspectratio>False</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,244,234,21</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Outlook: %outlook%</text>
+  <font>Arial,2.34375%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,266,200,17</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Wind: %wind% %speedunit% %winddirection%</text>
+  <font>Arial,2.34375%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,223,335,17</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Visibility: %visibility%</text>
+  <font>Arial,2.34375%,regular</font>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,202,527,17</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Barometer: %barometer% (%barometerdirection%)</text>
+  <font>Arial,2.34375%,regular</font>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,158,357,17</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Dewpoint: %dewpoint%°</text>
+  <font>Arial,2.34375%,regular</font>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,287,234,21</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Sunrises: %sunrise%</text>
+  <font>Arial,2.34375%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>110,79,615,30</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;%city%</text>
+  <font>Impact,3.38541666666667%,#91FFFFFF,italic</font>
+  <shadow>False</shadow>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,309,234,21</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Sunset: %sunset%</text>
+  <font>Arial,2.34375%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>300,360,400,72</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;1&gt;Tomorrow: %detaileddayoutlook%</text>
+  <font>Arial,3%,regular</font>
+  <shadow>False</shadow>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>38,106,223,42</location>
+  <navitem>False</navitem>
+  <text>Current Conditions</text>
+  <font>Impact,3.125%,italic</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,180,357,17</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;Feels Like: %feelslike%°</text>
+  <font>Arial,2.34375%,regular</font>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,120,234,21</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;0&gt;Max: %high%°</text>
+  <font>Arial,2.34375%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>257,139,234,21</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;0&gt;Min: %low%°</text>
+  <font>Arial,2.34375%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>81,370,200,200</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;1&gt;dayicon</text>
+  <font>Arial,0.9765625%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>462,135,244,190</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;radar</text>
+  <font>Arial,0.9765625%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>300,440,365,72</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;1&gt;Tomorrow night: %detailednightoutlook%</text>
+  <font>Arial,3%,regular</font>
+  <shadow>False</shadow>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>83,342,222,39</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;1&gt;%day% Outlook</text>
+  <font>Impact,4%,regular</font>
+  <shadow>False</shadow>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>39,129,200,200</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;nowicon</text>
+  <font>Arial,0.9765625%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>152,59,100,18</location>
+  <navitem>False</navitem>
+  <text>Weather</text>
+  <font>Arial,3%,bold</font>
+  <center>True</center>
+  <shadow>False</shadow>
+  <outlinecolor>#7894FF</outlinecolor>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>44,275,137,66</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;%temperature%°</text>
+  <font>Arial,5.98958333333333%,bold</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>520,104,161,37</location>
+  <navitem>False</navitem>
+  <text>RadarImage</text>
+  <font>Impact,3.125%,italic</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <eventid>goto:goto 5 day forecast</eventid>
+  <imagename>button.png</imagename>
+  <location>500,520,200,40</location>
+  <navitem>True</navitem>
+  <text>5 day forecast</text>
+  <fontresource>menu button</fontresource>
+  <font>Arial,3%,#FFFFFF,bold</font>
+  <textoffset>16:8</textoffset>
+  <shadow>False</shadow>
+  <textMovement>False</textMovement>
+  <locked>true</locked>
+  <soundresource>Navigation</soundresource>
+  <defaultnav>True</defaultnav>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>730,324,50,16</location>
+  <navitem>False</navitem>
+  <text>Change</text>
+  <font>Impact,2.08333333333333%,#91FFFFFF,italic</font>
+  <shadow>False</shadow>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <eventid>weather:refresh forecasts</eventid>
+  <imagename>star.png</imagename>
+  <location>736,435,33,33</location>
+  <navitem>True</navitem>
+  <font>Impact,2.60416666666667%,#FFFFFF,regular</font>
+  <soundresource>Navigation</soundresource>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <eventid>goto:goto start</eventid>
+  <imagename>home.png</imagename>
+  <location>732,28,48,37</location>
+  <navitem>False</navitem>
+  <font>Impact,2.60416666666667%,#FFFFFF,regular</font>
+  <soundresource>Go Home</soundresource>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <eventid>weather:next forecast</eventid>
+  <imagename>arrow-dwn.png</imagename>
+  <location>740,350,27,27</location>
+  <navitem>True</navitem>
+  <soundresource>Pagination</soundresource>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <eventid>weather:previous forecast</eventid>
+  <imagename>arrow-up.png</imagename>
+  <location>740,289,27,27</location>
+  <navitem>True</navitem>
+  <soundresource>Pagination</soundresource>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>729,473,48,16</location>
+  <navitem>False</navitem>
+  <text>Refresh</text>
+  <font>Impact,2.08333333333333%,#91FFFFFF,italic</font>
+  <shadow>False</shadow>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>-5,-11,444,116</location>
+  <navitem>False</navitem>
+  <text>weather</text>
+  <fontresource>page title</fontresource>
+  <font>Arial,14.1666666666667%,#55C3DEFD,regular</font>
+  <shadow>False</shadow>
+  <textMovement>False</textMovement>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>weather_logo.png</imagename>
+  <location>345,2,93,75</location>
+  <navitem>False</navitem>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>471,-5,280,78</location>
+  <navitem>False</navitem>
+  <text>datetime&gt;t</text>
+  <fontresource>clock</fontresource>
+  <font>Arial,9.16666666666667%,#55FFFFFF,bold</font>
+  <shadow>False</shadow>
+  <textMovement>False</textMovement>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>39,130,200,200</location>
+  <navitem>False</navitem>
+  <text>plugin&gt;xoapweather&gt;current&gt;weatheralert</text>
+  <font>Arial,2%,regular</font>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+<eventbutton>
+  <imagename>text</imagename>
+  <location>256,80,453,23</location>
+  <navitem>False</navitem>
+  <scrolltext>True</scrolltext>
+  <text>plugin&gt;xoapweather&gt;current&gt;%alert%</text>
+  <font>Arial,2.66666666666667%,#FFBFF9,bold</font>
+  <shadow>False</shadow>
+  <textMovement>False</textMovement>
+  <locked>true</locked>
+  <keepaspectratio>True</keepaspectratio>
+</eventbutton>
+
+</skin>

@@ -1,0 +1,22 @@
+<?php
+header("Content-type: text/plain");
+
+// Choose a file to parse
+// $file = 'fm.rdf';	// Parse a freshmeat.net RSS file
+$file = 'gnews.rss';	// iSyndicate RSS
+
+$data = implode("",file($file));
+
+include("class.RSS.php");
+$rss = new RSS ($data);
+$allItems = $rss->getAllItems();
+$itemCount = count($allItems);
+
+for($y=0;$y<$itemCount;$y++)
+{
+	print "\nItem [$y] has data\n";
+	print "[$y]: Title: " . $allItems[$y]['TITLE'];
+	print "\n[$y]: Link : " . $allItems[$y]['LINK'];
+	print "\n[$y]: Desc : " . $allItems[$y]['DESCRIPTION'];
+}    
+?>

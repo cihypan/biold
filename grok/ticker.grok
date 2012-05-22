@@ -1,0 +1,23 @@
+# $Id: ticker.grok,v 1.2 2003/06/05 18:40:17 segfault Exp $
+# This requires some postprocessing to remove font tags from negative
+# change values
+EWhat have you been smoking?
+Uhttp://ca.finance.yahoo.com/q?m=w&s={arg0}&d=v1
+X60
+T/tmp/ticker-{arg0}.html
+*
+SSymbol</th
+S/q?s=
+S&d=t">
+Vsymbol
+C<
+S<td nowrap><b>
+Vprice
+C<
+S<td nowrap>
+Vchange
+C</td
+S<td nowrap>
+Vchgpct
+C</td
+O{symbol} is {price}, {change} ({chgpct}).

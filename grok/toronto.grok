@@ -1,0 +1,14 @@
+EI don't know.  Why don't you look out the window?
+Uhttp://www.theweathernetwork.com/cities/can/Toronto_ON.htm
+X600
+T/tmp/toronto_weather.html
+*
+Sclass=stlt>
+S&nbsp;
+Vcondition
+C<
+STemperature
+S&nbsp;
+Vtemp
+C&
+O{condition}, {temp} degrees out.

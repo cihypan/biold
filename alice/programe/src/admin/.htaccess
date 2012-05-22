@@ -1,0 +1,4 @@
+AuthType	Basic
+AuthName	"Alice Admin"
+AuthUserFile	/disk3/bioh/public_html/phpadmin/.htpasswd
+require		valid-user

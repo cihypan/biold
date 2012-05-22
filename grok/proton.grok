@@ -1,0 +1,12 @@
+# $Id: proton.grok,v 1.1 2003/04/28 15:19:13 idcmp Exp $
+EYou call that music?
+Uhttp://www.protonradio.com/
+X20
+T/tmp/proton.html
+*
+SNow Playing:
+Ssite-data">
+Vtitle
+C<
+OThat sounds like {title}.
+

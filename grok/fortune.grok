@@ -1,0 +1,15 @@
+# $Id: fortune.grok,v 1.1 2003/04/24 19:22:49 idcmp Exp $
+EA closed mouth gathers no feet.
+Uhttp://www.reichel.net/potpourri/cookie.html
+X0
+T/tmp/fortune.html
+*
+S<td class=quote
+SFortune Cookie
+S<h3><i>
+S<br><br>
+Vfortune
+C<br><br>
+O{fortune}
+
+

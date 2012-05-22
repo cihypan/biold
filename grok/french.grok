@@ -1,0 +1,10 @@
+# $Id: french.grok,v 1.1 2003/06/05 19:44:24 segfault Exp $
+EJ'aime les tartes.
+Uhttp://babelfish.altavista.com/babelfish/tr?urltext={args}&doit=done&intl=1&tt=urltext&lp=en_fr
+X0
+T/tmp/french-{arg0}.html
+*
+Slang=fr>
+Vtext
+C</div>
+O{text}

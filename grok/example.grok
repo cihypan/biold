@@ -1,0 +1,44 @@
+# $Id: example.grok,v 1.4 2003/05/21 00:53:46 idcmp Exp $
+#
+# This is is how Smartie was so smart.  The first character specifies a
+# command.  The rest of the line is the argument.  The '*' command is used
+# to split the setup from the parsing.
+#
+# Arguments passed to grok are named {arg0}, {arg1}, etc..  All the
+# args strung together are passed in as {args}.   Uppercase versions
+# of the numbered arguments are available as {ARG0}, {ARG1}, etc..
+#
+# E: What to print if something goes wrong fetching/parsing/etc.
+# U: The URL to get data from.
+# X: How many seconds until the temp file should be considered expired.
+# T: The temp filename to use (and compare expiry timestamps against)
+# *: Fetch (U) if it has (X)'d and store it in (T), otherwise use (T).
+# S: Seek.  Look for text. Move cursor one character past end of text.
+# V: Create named variable.
+# C: Capture into current variable until text occurs (exclude text)
+# O: Output. 
+#
+# - Variables (and arguments) are substitued in for: U,T,S,O,E.
+# - Seek (S), and Capture (C) are not case-sensitive.
+# - Variables are stripped of leading/trailing spaces.
+#
+# You can have as many S/V/C's as you want.  All others should occur
+# only once (unless you really know what you're doing).
+
+ESorry, couldn't find the answer.
+Uhttp://www.internet-oracle.com/random-answer.html
+X3600
+T/tmp/random-answer.html
+*
+Sname="email"
+Smeta name="GENERATOR"
+S</title>
+S<font
+S>
+Vstuff
+C</font>
+S<form
+S<H1>
+Vthing
+C</H1>
+OIt's a fact: {stuff} and {thing} are cool.

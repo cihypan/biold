@@ -1,0 +1,110 @@
+/* $Id$
+   ------------------------------------------------------------------
+ | bot.php                                                            |
+ | ------------------------------------------------------------------ |
+ | Copyright (C) 2003 Donovan Schönknecht <ds@undesigned.org.za>      |
+ | ------------------------------------------------------------------ |
+ | Subtility - Configuration, callbacks and implementation            |
+ | ------------------------------------------------------------------ |
+ | This program is free software; you can redistribute it and/or      |
+ | modify it under the terms of the GNU General Public License as     |
+ | published by the Free Software Foundation; either version 2 of     |
+ | the License, or (at your option) any later version.                |
+ |                                                                    |
+ | This program is distributed in the hope that it will be useful,    |
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of     |
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the      |
+ | GNU General Public License for more details.                       |
+ |                                                                    |
+ | You should have received a copy of the GNU General Public License  |
+ | along with this program; if not, write to the Free Software        |
+ | Foundation, Inc., 59 Temple Place, Suite 330, Boston,              |
+ | MA 02111-1307  USA                                                 |
+   ------------------------------------------------------------------ */
+
+/** README (yes, read this):
+
+  Subtility is really more of an IRC framework than an IRC bot.
+  The idea is to provide an easy, stable interface to IRC, just
+  add callbacks. Callbacks are called on different IRC events,
+  such as onOp, onJoin, onQuit, etc.
+  
+  This file gives examples of callbacks and the implementation of the
+  callbacks to the ircBot class.
+
+  Channel modes are now split up and working properly, currently only
+  the channel events:
+    onOp/onDeOp, onVoice/onDeVoice, onBan/onUnban
+  are registered for channel modes, all other modes will be passed to onMode
+  individually...
+  
+  There are still minor odds n ends that need tweaking, but the overall
+  implementation is completely stable. The framework is used on a live IRC bot
+  which saves channel/server information into a MySQL database, as well as reads
+  the users database into the configuration. Already changes from the new bot
+  have come into the current framework. Reconnections and failed connections
+  should not be too much of a problem now, and it will rotate between the list
+  of servers if it can't connect, if stayAlive is set the bot will keep trying.
+  
+  --------------------- GETTING STARTED ---------------------------
+    The configuration values below will need to be edited, as well
+    as #!/usr/local/bin/php to your PHP path or run it as
+    ./bot.php &
+    to put it in the background, then you can
+    tail -f log/<botNickNameGoesHere>.log
+    which will show you the log data as it recieves it. It has to
+    be done this way because PHP treats the output wierdly.
+    
+    To view the raw IRC output subtility recieves, set ircDebug to
+    true, this will also display any other debug data.
+    
+    See the callback functions and comments below for an idea of how
+    the callbacks work. It's fairly simple...
+  -----------------------------------------------------------------
+  
+  Please don't hesitate to send corrections, suggestions (preferebly
+  theoretical/programmatical) or bug reports via my email address
+  or bug reporter @
+  http://undesigned.org.za/bugReport/L3Byb2plY3RzL3N1YnRpbGl0eS8%3D
+  OR IRC if you really want: irc.zanet.org.za #webdesign 'myprodol'
+
+        Enjoi!
+           -- Don
+*/
+// 
+// well thanks for your work Don,
+// 
+// i decided to use this bot, and add on a bunch of stuff
+// originally it was to be used as 'old' bot... meaning
+// that if you add on the database to it, it will capture urls from
+// the channel that it is in, and silently add them in
+// and yell OLD OLD if url has been pasted before
+// added on horoscope
+// google
+// lame eliza ai
+// stock ticker
+// weather
+//   - forecast
+// warez releases (along the same lines as urls)
+// babelfish translation
+//
+
+// bioh
+
+this is my first attempt at making this public again, 
+there have been countless changes to this source since it's initial inception by mr Don
+
+things that should be done here still
+- cleanup :(  
+- update to php5 (probably update the irc connect class, the current one sucks)
+
+
+to start this up initially
+
+1) mysqladmin -p create bot_db
+2) mysql -p bot_db < bot.schema.sql
+3) edit bot.php  (enter username / password you are using for this bot_db)
+4) edit bot.php  - set up your admin and channel / server to connect to 
+5) start up the bot in a screen session or ... something
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" name="ITempConverterservice" targetNamespace="http://www.borland.com/soapServices/" xmlns:tns="http://www.borland.com/soapServices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <message name="CtoFRequest">
+    <part name="temp" type="xs:int"/>
+  </message>
+  <message name="CtoFResponse">
+    <part name="return" type="xs:int"/>
+  </message>
+  <message name="FtoCRequest">
+    <part name="temp" type="xs:int"/>
+  </message>
+  <message name="FtoCResponse">
+    <part name="return" type="xs:int"/>
+  </message>
+  <portType name="ITempConverter">
+    <operation name="CtoF">
+      <input message="tns:CtoFRequest"/>
+      <output message="tns:CtoFResponse"/>
+    </operation>
+    <operation name="FtoC">
+      <input message="tns:FtoCRequest"/>
+      <output message="tns:FtoCResponse"/>
+    </operation>
+  </portType>
+  <binding name="ITempConverterbinding" type="tns:ITempConverter">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="CtoF">
+      <soap:operation soapAction="urn:TempConverterIntf-ITempConverter#CtoF"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:TempConverterIntf-ITempConverter"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:TempConverterIntf-ITempConverter"/>
+      </output>
+    </operation>
+    <operation name="FtoC">
+      <soap:operation soapAction="urn:TempConverterIntf-ITempConverter#FtoC"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:TempConverterIntf-ITempConverter"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:TempConverterIntf-ITempConverter"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="ITempConverterservice">
+    <port name="ITempConverterPort" binding="tns:ITempConverterbinding">
+      <soap:address location="http://developerdays.com/cgi-bin/tempconverter.exe/soap/ITempConverter"/>
+    </port>
+  </service>
+</definitions>

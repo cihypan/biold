@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<definitions name="eBayWatcherService" targetNamespace="http://www.xmethods.net/sd/eBayWatcherService.wsdl"  xmlns:tns="http://www.xmethods.net/sd/eBayWatcherService.wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+	<message name="getCurrentPriceRequest">
+		<part name="auction_id" type="xsd:string"/>
+	</message>
+	<message name="getCurrentPriceResponse">
+		<part name="return" type="xsd:float"/>
+	</message>
+	<portType name="eBayWatcherPortType">
+		<operation name="getCurrentPrice">
+			<input message="tns:getCurrentPriceRequest" name="getCurrentPrice"/>
+			<output message="tns:getCurrentPriceResponse" name="getCurrentPriceResponse"/>
+		</operation>
+	</portType>
+	<binding name="eBayWatcherBinding" type="tns:eBayWatcherPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getCurrentPrice">
+			<soap:operation soapAction=""/>
+			<input name="getCurrentPrice">
+				<soap:body use="encoded" namespace="urn:xmethods-EbayWatcher" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output name="getCurrentPriceResponse">
+				<soap:body use="encoded" namespace="urn:xmethods-EbayWatcher" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="eBayWatcherService">
+		<documentation>Checks current high bid for an eBay auction</documentation>
+		<port name="eBayWatcherPort" binding="tns:eBayWatcherBinding">
+			<soap:address location="http://services.xmethods.net:80/soap/servlet/rpcrouter"/>
+		</port>
+	</service>
+</definitions>

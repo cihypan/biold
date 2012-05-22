@@ -1,0 +1,14 @@
+# $Id: bbc.grok,v 1.1 2003/04/27 16:14:05 idcmp Exp $
+EBBC officially denies Austin Powers ever existed baby yeah!
+Uhttp://www.bbc.co.uk/
+X600
+T/tmp/bbc.html
+*
+Std id="news"
+Sclass="li"
+Shref=
+S>
+Vheadline
+C<
+OBBC: {headline}
+

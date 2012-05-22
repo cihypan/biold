@@ -1,0 +1,26 @@
+EPartly sunny with a chance of rain.  Or was that partly cloudy with a chance of snow?
+Uhttp://www.theweathernetwork.com/cities/can/ottawa_ON.htm
+X600
+T/tmp/ottawa_weather_tomorrow.html
+*
+SLong term forecast starts here --->
+Sclass="stlt"><b>
+Sclass=stlt><b>
+Vday
+C<
+Sclass=stlt>
+Vgeneral
+C<
+SHigh
+Sclass=stlt>
+Vhigh
+C&
+SLow
+Sclass=stlt>
+Vlow
+C&
+SP.O.P
+Sclass=stlt>
+Vpop
+C<
+OWeather for Ottawa on {day}: {general}, high {high} low {low}, PoP {pop}

@@ -1,0 +1,13 @@
+# $Id: googlism.grok,v 1.1 2003/04/29 19:35:55 idcmp Exp $
+EBeats me!
+Uhttp://www.googlism.com/index.htm?ism={arg0}&type=1
+X3600
+T/tmp/googlism-{arg0}.html
+*
+Sclass="suffix"
+S</h1>
+S<br>
+Vdef
+C<
+O{def}
+

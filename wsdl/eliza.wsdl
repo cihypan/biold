@@ -1,0 +1,45 @@
+<definitions name="chat" targetNamespace="SoapInterop" xmlns:wsdlns="SoapInterop" xmlns:typens="SoapInterop" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:stk="http://schemas.microsoft.com/soap-toolkit/wsdl-extension" xmlns="http://schemas.xmlsoap.org/wsdl/">
+ <types>
+  <schema targetNamespace="SoapInterop" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" elementFormDefault="qualified">
+  </schema>
+ </types>
+
+ <message name="ElizaRequest">
+    <part name="Say" type="xsd:string" />
+  </message>
+
+ <message name="ElizaResponse">
+    <part name="Eliza" type="xsd:string" />
+ </message>
+
+
+ <portType name="chatPortType">
+  <operation name="Eliza">
+    <documentation>Eliza - Chat with a bot!</documentation> 
+    <input message="wsdlns:ElizaRequest"/>
+    <output message="wsdlns:ElizaResponse"/>
+  </operation>
+ </portType>
+
+ <binding name="chatBinding" type="wsdlns:chatPortType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+   <operation name="Eliza">
+    <soap:operation soapAction="#Eliza"/>
+     <input>
+      <soap:body use="encoded" namespace="SoapInterop" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+     </input>
+     <output>
+      <soap:body use="encoded" namespace="SoapInterop" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+     </output>
+    </operation>
+ </binding>
+
+ <service name="chat">
+  <documentation>Eliza - Chat with a bot!</documentation> 
+  <port name="IBaseDataTypes" binding="wsdlns:chatBinding">
+   <soap:address location="http://www.x-ws.de/cgi-bin/eliza/chat.wsdl"/>
+  </port>
+</service>
+</definitions>
+
+

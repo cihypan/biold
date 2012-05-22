@@ -1,0 +1,14 @@
+# $Id: google.grok,v 1.2 2003/05/21 00:53:46 idcmp Exp $
+EI've never heard of such a thing!
+Uhttp://www.google.ca/search?q={args}
+X3600
+T/tmp/google-{args}.html
+*
+Sclass=g
+Shref=
+Vurl
+C>
+Vtitle
+C</a>
+O{title} - {url}
+

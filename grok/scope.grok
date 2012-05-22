@@ -1,0 +1,13 @@
+# $Id: scope.grok,v 1.2 2003/06/11 19:57:51 idcmp Exp $
+EI dunno, but I'm sure you'll have a good day!
+Uhttp://www.latimes.com/features/horoscopes/
+X3600
+T/tmp/horoscope.html
+*
+Sdiv class="content">
+S><b>{ARG0}
+S>
+Vhoroscope
+C<
+O{horoscope}
+

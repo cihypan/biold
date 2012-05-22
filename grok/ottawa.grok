@@ -1,0 +1,23 @@
+EI don't know.  Why don't you look out the window?
+Uhttp://www.theweathernetwork.com/weather/cities/can/pages/CAON0512.htm
+X600
+T/tmp/ottawa_weather.html
+*
+S<!-- Bloc Observation -->
+Sinter/help
+S,
+S,
+S"
+Vcondition
+C",
+S",
+S",
+S",
+S",
+S",
+S",
+S",
+S"
+Vtemp
+C&
+O{condition}, {temp} degrees out.

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns="http://my.netscape.com/rdf/simple/0.9/">
+	<channel>
+		<title>Slashdot: News for nerds, stuff that matters</title>
+		<link>http://slashdot.org</link>
+		<description>News for nerds, stuff that matters</description>
+	</channel>
+
+	<image>
+		<title>Slashdot</title>
+		<url>http://images.slashdot.org/topics/topicslashdot.gif</url>
+		<link>http://slashdot.org</link>
+	</image>
+
+	<item>
+		<title>Prevailing Against Michigan Censorship</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/11/1243224</link>
+	</item>
+
+	<item>
+		<title>UK Servers Humming In Former Nuclear Bunker</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/11/1219229</link>
+	</item>
+
+	<item>
+		<title>iPAQ AutoMP3 Jukebox How-to</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/11/0513259</link>
+	</item>
+
+	<item>
+		<title>EU To Investigate DVD pricing</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/11/0458205</link>
+	</item>
+
+	<item>
+		<title>Dr. Who To Come Back To The BBC</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/11/0244246</link>
+	</item>
+
+	<item>
+		<title>Fiber Optics Come To Rural Washington</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/11/008237</link>
+	</item>
+
+	<item>
+		<title>Law Review Article Says Port Scanning Illegal</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/10/209201</link>
+	</item>
+
+	<item>
+		<title>Shake While You Quake for $20?</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/10/1523232</link>
+	</item>
+
+	<item>
+		<title>The Pentagon Discovers dd</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/10/1455257</link>
+	</item>
+
+	<item>
+		<title>University IT Departments and Viruses?</title>
+		<link>http://slashdot.org/article.pl?sid=01/06/06/182242</link>
+	</item>
+
+</rdf:RDF>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://swanandmokashi.com/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://swanandmokashi.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://swanandmokashi.com/">
+      <s:element name="GetHoroscope">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetHoroscopeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHoroscopeResult" type="s0:ArrayOfZodiacSigns" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfZodiacSigns">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZodiacSigns" type="s0:ZodiacSigns" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZodiacSigns">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ZodiacSign" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DailyForecast" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfZodiacSigns" nillable="true" type="s0:ArrayOfZodiacSigns" />
+    </s:schema>
+  </types>
+  <message name="GetHoroscopeSoapIn">
+    <part name="parameters" element="s0:GetHoroscope" />
+  </message>
+  <message name="GetHoroscopeSoapOut">
+    <part name="parameters" element="s0:GetHoroscopeResponse" />
+  </message>
+  <message name="GetHoroscopeHttpGetIn" />
+  <message name="GetHoroscopeHttpGetOut">
+    <part name="Body" element="s0:ArrayOfZodiacSigns" />
+  </message>
+  <message name="GetHoroscopeHttpPostIn" />
+  <message name="GetHoroscopeHttpPostOut">
+    <part name="Body" element="s0:ArrayOfZodiacSigns" />
+  </message>
+  <portType name="HoroscopeSoap">
+    <operation name="GetHoroscope">
+      <documentation>Gets the daily horoscope for all the 12 zodiac signs.&lt;BR&gt;&lt;b&gt;Powered by Astrocenter.com , Yahoo!.Not for commerical use.For demo purposes only.&lt;/b&gt;</documentation>
+      <input message="s0:GetHoroscopeSoapIn" />
+      <output message="s0:GetHoroscopeSoapOut" />
+    </operation>
+  </portType>
+  <portType name="HoroscopeHttpGet">
+    <operation name="GetHoroscope">
+      <documentation>Gets the daily horoscope for all the 12 zodiac signs.&lt;BR&gt;&lt;b&gt;Powered by Astrocenter.com , Yahoo!.Not for commerical use.For demo purposes only.&lt;/b&gt;</documentation>
+      <input message="s0:GetHoroscopeHttpGetIn" />
+      <output message="s0:GetHoroscopeHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="HoroscopeHttpPost">
+    <operation name="GetHoroscope">
+      <documentation>Gets the daily horoscope for all the 12 zodiac signs.&lt;BR&gt;&lt;b&gt;Powered by Astrocenter.com , Yahoo!.Not for commerical use.For demo purposes only.&lt;/b&gt;</documentation>
+      <input message="s0:GetHoroscopeHttpPostIn" />
+      <output message="s0:GetHoroscopeHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="HoroscopeSoap" type="s0:HoroscopeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetHoroscope">
+      <soap:operation soapAction="http://swanandmokashi.com/GetHoroscope" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="HoroscopeHttpGet" type="s0:HoroscopeHttpGet">
+    <http:binding verb="GET" />
+    <operation name="GetHoroscope">
+      <http:operation location="/GetHoroscope" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="HoroscopeHttpPost" type="s0:HoroscopeHttpPost">
+    <http:binding verb="POST" />
+    <operation name="GetHoroscope">
+      <http:operation location="/GetHoroscope" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Horoscope">
+    <port name="HoroscopeSoap" binding="s0:HoroscopeSoap">
+      <soap:address location="http://www.swanandmokashi.com/HomePage/WebServices/Horoscope.asmx" />
+    </port>
+    <port name="HoroscopeHttpGet" binding="s0:HoroscopeHttpGet">
+      <http:address location="http://www.swanandmokashi.com/HomePage/WebServices/Horoscope.asmx" />
+    </port>
+    <port name="HoroscopeHttpPost" binding="s0:HoroscopeHttpPost">
+      <http:address location="http://www.swanandmokashi.com/HomePage/WebServices/Horoscope.asmx" />
+    </port>
+  </service>
+</definitions>

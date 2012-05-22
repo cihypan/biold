@@ -1,0 +1,10 @@
+# $Id: german.grok,v 1.1 2003/06/05 19:44:24 segfault Exp $
+Ewas rauchen Sie?
+Uhttp://babelfish.altavista.com/babelfish/tr?urltext={args}&doit=done&intl=1&tt=urltext&lp=en_de
+X0
+T/tmp/german-{arg0}.html
+*
+Slang=de>
+Vtext
+C</div>
+O{text}

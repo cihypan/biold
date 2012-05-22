@@ -1,0 +1,23 @@
+
+See the source code, demo test files, and sparse comments for usage
+information. I haven't done any documentation for this class as yet. I'm
+sure I'll get around to it "Real Soon Now".
+
+test2.phtml is a good example of using all the current features of this
+class.
+
+Remember, this class is designed to only *parse* the RSS data file and set
+up the resulting information in a format you can use programmatically. Do
+not send me questions about what you're supposed to do with the data after
+it's parsed - that's your job, not mine. See the included rss-0.91.dtd file
+to see what kind of values can be found within an RSS file.
+
+This class should be able to handle anything you find out there without a
+hitch, but I'm not claiming it's perfect, or even heavily tested. If you
+find something the class doesn't work well with, then by all means make the
+needed changes and send me the patch. I'll be overjoyed with you, mention
+you prominently in my Oscar award acceptance speech, and name my first born
+after you. Don't just send me an email saying only that "it doesn't work
+with this RSS file".
+
+Joe.

@@ -1,0 +1,12 @@
+# $Id: title.grok,v 1.1 2003/04/28 20:47:59 idcmp Exp $
+EI dunno.
+Uhttp://{arg0}/
+X60
+T/tmp/title-{arg0}.html
+*
+Stitle>
+Vtitle
+C<
+O{arg0} - {title}
+
+

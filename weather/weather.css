@@ -1,0 +1,186 @@
+body {
+ 	font-family: verdana, arial, helvetica, sans-serif;
+	color: #000000;
+}
+table.ccDetails {
+	border: 1px Solid #eeeeee;
+	font-size: 12px;
+}
+.wTod {
+	font-weight: bold;
+	border-top: 1px Solid #eeeeee;
+	border-bottom: 1px Solid #eeeeee;
+}
+.wForecast {
+	border-top: 1px dotted #dddddd;
+	font-size: 11px;
+}
+a.wForecastLink {
+	font-size: 11px;
+	color: #000000;
+	
+}
+.wObserv {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #eee;
+}
+.wConditions {
+	font-size: 10px;
+	font-weight: bold;
+}
+.wCondDetails {
+	font-size: 12px;
+	font-weight: bold;
+}
+.wFeel {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #eee;
+}
+.wFeelValue {
+	font-size: 11px;
+	background-color: #eee;
+}
+.wHumidity {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #fff;
+}
+.wHumidityValue {
+	font-size: 11px;
+	background-color: #fff;
+}
+.wWinds {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #eee;
+}
+.wWindsValue {
+	font-size: .7em;
+	background-color: #eee;
+}
+.wWindg {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #fff;
+}
+.wWindgValue {
+	font-size: 11px;
+	background-color: #fff;
+}
+.wBar {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #fff;
+}
+.wBarValue {
+	font-size: 11px;
+	background-color: #fff;
+}
+.wDew {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #eee;
+}
+.wDewValue {
+	font-size: 11px;
+	background-color: #eee;
+}
+.wVisi {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #fff;
+}
+.wVisiValue {
+	font-size: 11px;
+	background-color: #fff;
+}
+.wUv {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #eee;
+}
+.wUvValue {
+	font-size: 11px;
+	background-color: #eee;
+}
+.wPrecip {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #eee;
+}
+.wPrecipValue {
+	font-size: 11px;
+	background-color: #eee;
+}
+.wSunr {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #fff;
+}
+.wSunrValue {
+	font-size: 11px;
+	background-color: #fff;
+}
+.wSuns {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #eee;
+}
+.wSunsValue {
+	font-size: 11px;
+	background-color: #eee;
+}
+.wExtForecast {
+	font-size: 10px;
+ 	text-align: center;
+	background-color: #eee;
+}
+a.wExtForecast {
+	font-size: 10px;
+	color: #000000;
+}
+
+.wLsup { 
+	font-size: 9px;
+	color: #c0c0c0;
+	text-align: right;
+	background-color: #fff;
+	border-top: 1px dotted #eeeeee;
+}
+.wDetails {
+	color: #000000;
+	background-color: #eeeeee;
+	text-align: center;
+	font-size: 9px;
+}
+.wxLinks {
+	font-size: 10px;
+	color: #000000;
+}
+input, textarea {
+    border: 1px solid #000;
+    font-family: Verdana;
+    font-size: .8em;
+	padding: 1px;
+}
+
+select {
+    border: 1px solid #000;
+    font-family: Verdana;
+    font-size: 1em;
+}
+a.weatherChannel:link {
+	font-size: 10px;
+	color: #000000;
+}
+a.weatherChannel:VISITED {
+	font-size: 10px;
+	color: #000000;
+}
+a.weatherChannel:ACTIVE {
+	font-size: 10px;
+	color: #000000;
+}

@@ -1,0 +1,219 @@
+Array
+(
+    [mediawiki] => Array
+        (
+            [siteinfo] => Array
+                (
+                    [sitename] => Array
+                        (
+                            [value] => Wikipedia
+                        )
+
+                    [base] => Array
+                        (
+                            [value] => http://en.wikipedia.org/wiki/Main_Page
+                        )
+
+                    [generator] => Array
+                        (
+                            [value] => MediaWiki 1.8alpha
+                        )
+
+                    [case] => Array
+                        (
+                            [value] => first-letter
+                        )
+
+                    [namespaces] => Array
+                        (
+                            [namespace] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => -2
+                                            [value] => Media
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => -1
+                                            [value] => Special
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => 0
+                                            [value] => 
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [key] => 1
+                                            [value] => Talk
+                                        )
+
+                                    [4] => Array
+                                        (
+                                            [key] => 2
+                                            [value] => User
+                                        )
+
+                                    [5] => Array
+                                        (
+                                            [key] => 3
+                                            [value] => User talk
+                                        )
+
+                                    [6] => Array
+                                        (
+                                            [key] => 4
+                                            [value] => Wikipedia
+                                        )
+
+                                    [7] => Array
+                                        (
+                                            [key] => 5
+                                            [value] => Wikipedia talk
+                                        )
+
+                                    [8] => Array
+                                        (
+                                            [key] => 6
+                                            [value] => Image
+                                        )
+
+                                    [9] => Array
+                                        (
+                                            [key] => 7
+                                            [value] => Image talk
+                                        )
+
+                                    [10] => Array
+                                        (
+                                            [key] => 8
+                                            [value] => MediaWiki
+                                        )
+
+                                    [11] => Array
+                                        (
+                                            [key] => 9
+                                            [value] => MediaWiki talk
+                                        )
+
+                                    [12] => Array
+                                        (
+                                            [key] => 10
+                                            [value] => Template
+                                        )
+
+                                    [13] => Array
+                                        (
+                                            [key] => 11
+                                            [value] => Template talk
+                                        )
+
+                                    [14] => Array
+                                        (
+                                            [key] => 12
+                                            [value] => Help
+                                        )
+
+                                    [15] => Array
+                                        (
+                                            [key] => 13
+                                            [value] => Help talk
+                                        )
+
+                                    [16] => Array
+                                        (
+                                            [key] => 14
+                                            [value] => Category
+                                        )
+
+                                    [17] => Array
+                                        (
+                                            [key] => 15
+                                            [value] => Category talk
+                                        )
+
+                                    [18] => Array
+                                        (
+                                            [key] => 100
+                                            [value] => Portal
+                                        )
+
+                                    [19] => Array
+                                        (
+                                            [key] => 101
+                                            [value] => Portal talk
+                                        )
+
+                                )
+
+                            [value] => 
+                        )
+
+                    [value] => 
+                )
+
+            [page] => Array
+                (
+                    [title] => Array
+                        (
+                            [value] => Test
+                        )
+
+                    [id] => Array
+                        (
+                            [value] => 30415
+                        )
+
+                    [restrictions] => Array
+                        (
+                            [value] => move=:edit=
+                        )
+
+                    [revision] => Array
+                        (
+                            [id] => Array
+                                (
+                                    [value] => 70025238
+                                )
+
+                            [timestamp] => Array
+                                (
+                                    [value] => 2006-08-16T14:55:43Z
+                                )
+
+                            [contributor] => Array
+                                (
+                                    [ip] => Array
+                                        (
+                                            [value] => 66.87.52.204
+                                        )
+
+                                    [value] => 
+                                )
+
+                            [text] => Array
+                                (
+                                    [xml:space] => preserve
+                                    [value] => {{selfref|For tests on Wikipedia, go to [[Wikipedia:Sandbox]].}}{{wiktionarypar|test}}'''Test''' or '''testing''' may refer to: * Test and [[experiment]] form parts of the scientific method, to verify or falsify an expectation with an observation. See [[statistical hypothesis testing]] for the case when the outcome is subject to random variation.*[[Test (student assessment)]] or [[assessment]], in education, (also called an "examination")  serves to assess or measure students' performance, knowledge or skills* [[Quality control|Quality control testing]], in manufacturing, a procedure designed to test the functionality of a product under potentially harmful conditions; see also [[system under test]]* [[Software testing]], in software engineering, identifies bugs in programs* In marketing, test can refer to a type of [[marketing research]]*[[List of tests]], a more complete list of articles on testsOther uses of the word '''test''': * [[Andrew "Test" Martin]] uses the ring-name ''Test'' in  [[Professional wrestling]]* [[Test match]], in sports, a game with international overtones* [[Test cricket]], in the sport of cricket, consists of a two-innings match between two top-level cricketing nations* In biology, a test is the shell of one of certain microbes, such as testate [[foraminifera]] and testate [[Amoeba|amoeba]]s. * [[Test (Unix)|test]] is a [[Unix]] command for evaluating conditional expressions.* In [[fishing]], a measure of the strength of fishing line* [[River Test]], England{{disambig}}[[da:Test]][[de:Test (Begriffsklärung)]][[fr:Test]][[he:תורת המבחנים]][[lt:Testas]][[nl:Test]][[ja:テスト]][[no:Test]][[pl:Test]][[ru:Тест]][[simple:Test]][[sv:Test]]
+                                )
+
+                            [value] => 
+                        )
+
+                    [value] => 
+                )
+
+            [xmlns] => http://www.mediawiki.org/xml/export-0.3/
+            [xmlns:xsi] => http://www.w3.org/2001/XMLSchema-instance
+            [xsi:schemaLocation] => http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd
+            [version] => 0.3
+            [xml:lang] => en
+            [value] => 
+        )
+
+)
+{{selfref|For tests on Wikipedia, go to [[Wikipedia:Sandbox]].}}{{wiktionarypar|test}}'''Test''' or '''testing''' may refer to: * Test and [[experiment]] form parts of the scientific method, to verify or falsify an expectation with an observation. See [[statistical hypothesis testing]] for the case when the outcome is subject to random variation.*[[Test (student assessment)]] or [[assessment]], in education, (also called an "examination")  serves to assess or measure students' performance, knowledge or skills* [[Quality control|Quality control testing]], in manufacturing, a procedure designed to test the functionality of a product under potentially harmful conditions; see also [[system under test]]* [[Software testing]], in software engineering, identifies bugs in programs* In marketing, test can refer to a type of [[marketing research]]*[[List of tests]], a more complete list of articles on testsOther uses of the word '''test''': * [[Andrew "Test" Martin]] uses the ring-name ''Test'' in  [[Professional wrestling]]* [[Test match]], in sports, a game with international overtones* [[Test cricket]], in the sport of cricket, consists of a two-innings match between two top-level cricketing nations* In biology, a test is the shell of one of certain microbes, such as testate [[foraminifera]] and testate [[Amoeba|amoeba]]s. * [[Test (Unix)|test]] is a [[Unix]] command for evaluating conditional expressions.* In [[fishing]], a measure of the strength of fishing line* [[River Test]], England{{disambig}}[[da:Test]][[de:Test (Begriffsklärung)]][[fr:Test]][[he:תורת המבחנים]][[lt:Testas]][[nl:Test]][[ja:テスト]][[no:Test]][[pl:Test]][[ru:Тест]][[simple:Test]][[sv:Test]]

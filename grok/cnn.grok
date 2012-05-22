@@ -1,0 +1,13 @@
+# $Id: cnn.grok,v 1.1 2003/04/24 18:11:14 idcmp Exp $
+ECNN reports nosy IRC people cannot reach their website.  More at 11.
+Uhttp://cnn.com/
+X600
+T/tmp/cnn.html
+*
+S<!-- T1 -->
+S<img src=
+Vheadline
+Salt="
+C" width
+OCNN: {headline}
+

@@ -1,0 +1,13 @@
+# $Id: space.grok,v 1.1 2003/06/11 19:57:51 idcmp Exp $
+ECNN reports nosy IRC people cannot reach their website.  More at 11.
+Uhttp://www.space.com/
+X600
+T/tmp/space.html
+*
+Sspc_hp_story_bullets.gif
+Sflag=0
+S>
+Vheadline
+C</
+OSpace: {headline}
+

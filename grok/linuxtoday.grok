@@ -1,0 +1,17 @@
+# $Id: linuxtoday.grok,v 1.2 2003/04/28 03:00:22 idcmp Exp $
+EMost Read Story: Nothing you idiot, Dr. Dre's dead!
+Uhttp://linuxtoday.com/
+X3600
+T/tmp/linuxtoday.html
+*
+EMost Read Story is not listed on their website right now.
+SToday's Most-Read Story
+EMost Read Story: Nothing you idiot, Dr. Dre's dead!
+Scellpadding
+SHREF=
+Vurl
+C>
+Vheadline
+C<
+OMost Read Story: {headline}
+

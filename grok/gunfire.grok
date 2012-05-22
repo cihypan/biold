@@ -1,0 +1,13 @@
+# $Id: gunfire.grok,v 1.1 2003/04/24 16:38:29 idcmp Exp $
+
+EYou call that music?
+Uhttp://www.digitalgunfire.com/
+X20
+T/tmp/gunfire.html
+*
+SCurrently playing
+SSongTitle">
+Vtitle
+C<
+OThat sounds like {title}.
+

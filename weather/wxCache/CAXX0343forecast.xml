@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This document is intended only for use by authorized licensees of The  -->
+<!-- Weather Channel. Unauthorized use is prohibited.  Copyright 1995-2012, -->
+<!-- The Weather Channel Interactive, Inc.  All Rights Reserved.            -->
+<weather ver="2.0">
+  <head>
+    <locale>en_US</locale>
+    <form>MEDIUM</form>
+    <ut>C</ut>
+    <ud>km</ud>
+    <us>km/h</us>
+    <up>mb</up>
+    <ur>mm</ur>
+  </head>
+  <loc id="CAXX0343">
+    <dnam>Ottawa, Canada</dnam>
+    <tm>2:40 PM</tm>
+    <lat>45.42</lat>
+    <lon>-75.69</lon>
+    <sunr>5:28 AM</sunr>
+    <suns>8:31 PM</suns>
+    <zone>-4</zone>
+  </loc>
+  <lnks type="prmo">
+    <link pos="1">
+      <l>http://www.weather.com/allergies?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link1&amp;cm_ite=Allergies</l>
+      <t>Local Pollen Reports</t>
+    </link>
+    <link pos="2">
+      <l>http://www.weather.com/flights?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link2&amp;cm_ite=BusinessTraveler</l>
+      <t>Airport Conditions</t>
+    </link>
+    <link pos="3">
+      <l>http://www.weather.com/garden?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link3&amp;cm_ite=Garden</l>
+      <t>Lawn and Garden Weather</t>
+    </link>
+    <link pos="4">
+      <l>http://www.weather.com/traffic?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link4&amp;cm_ite=Traffic</l>
+      <t>Rush Hour Traffic</t>
+    </link>
+  </lnks>
+  <dayf>
+    <lsup>5/19/12 2:15 PM Local Time</lsup>
+    <day d="0" t="Saturday" dt="May 19">
+      <hi>N/A</hi>
+      <low>10</low>
+      <sunr>5:28 AM</sunr>
+      <suns>8:31 PM</suns>
+      <part p="d">
+        <icon>44</icon>
+        <t>N/A</t>
+        <wind>
+          <s>N/A</s>
+          <gust>N/A</gust>
+          <d>N/A</d>
+          <t>N/A</t>
+        </wind>
+        <bt>N/A</bt>
+        <ppcp>0</ppcp>
+        <hmid>N/A</hmid>
+      </part>
+      <part p="n">
+        <icon>31</icon>
+        <t>Clear</t>
+        <wind>
+          <s>10</s>
+          <gust>N/A</gust>
+          <d>209</d>
+          <t>SSW</t>
+        </wind>
+        <bt>Clear</bt>
+        <ppcp>0</ppcp>
+        <hmid>70</hmid>
+      </part>
+    </day>
+    <day d="1" t="Sunday" dt="May 20">
+      <hi>31</hi>
+      <low>12</low>
+      <sunr>5:27 AM</sunr>
+      <suns>8:32 PM</suns>
+      <part p="d">
+        <icon>32</icon>
+        <t>Sunny</t>
+        <wind>
+          <s>8</s>
+          <gust>N/A</gust>
+          <d>193</d>
+          <t>SSW</t>
+        </wind>
+        <bt>Sunny</bt>
+        <ppcp>0</ppcp>
+        <hmid>48</hmid>
+      </part>
+      <part p="n">
+        <icon>33</icon>
+        <t>Mostly Clear</t>
+        <wind>
+          <s>6</s>
+          <gust>N/A</gust>
+          <d>149</d>
+          <t>SSE</t>
+        </wind>
+        <bt>M Clear</bt>
+        <ppcp>10</ppcp>
+        <hmid>72</hmid>
+      </part>
+    </day>
+    <day d="2" t="Monday" dt="May 21">
+      <hi>28</hi>
+      <low>15</low>
+      <sunr>5:26 AM</sunr>
+      <suns>8:34 PM</suns>
+      <part p="d">
+        <icon>34</icon>
+        <t>Mostly Sunny</t>
+        <wind>
+          <s>13</s>
+          <gust>N/A</gust>
+          <d>166</d>
+          <t>SSE</t>
+        </wind>
+        <bt>M Sunny</bt>
+        <ppcp>10</ppcp>
+        <hmid>54</hmid>
+      </part>
+      <part p="n">
+        <icon>11</icon>
+        <t>Showers</t>
+        <wind>
+          <s>6</s>
+          <gust>N/A</gust>
+          <d>185</d>
+          <t>S</t>
+        </wind>
+        <bt>Showers</bt>
+        <ppcp>40</ppcp>
+        <hmid>76</hmid>
+      </part>
+    </day>
+    <day d="3" t="Tuesday" dt="May 22">
+      <hi>21</hi>
+      <low>11</low>
+      <sunr>5:25 AM</sunr>
+      <suns>8:35 PM</suns>
+      <part p="d">
+        <icon>11</icon>
+        <t>Few Showers</t>
+        <wind>
+          <s>13</s>
+          <gust>N/A</gust>
+          <d>295</d>
+          <t>WNW</t>
+        </wind>
+        <bt>Few Showers</bt>
+        <ppcp>30</ppcp>
+        <hmid>72</hmid>
+      </part>
+      <part p="n">
+        <icon>29</icon>
+        <t>Partly Cloudy</t>
+        <wind>
+          <s>6</s>
+          <gust>N/A</gust>
+          <d>2</d>
+          <t>N</t>
+        </wind>
+        <bt>P Cloudy</bt>
+        <ppcp>10</ppcp>
+        <hmid>65</hmid>
+      </part>
+    </day>
+  </dayf>
+</weather>
+

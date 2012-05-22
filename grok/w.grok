@@ -1,0 +1,45 @@
+# $Id: w.grok,v 1.2 2003/04/29 20:57:00 idcmp Exp $
+#
+# Compound-grok lookup, for the weather .. *sigh*
+#
+# User enters the beginning of a city name.  First we start by 
+# grokking a city->airport code table.  We capture the {code} of the airport.
+#
+ECouldn't find a city whose name starts with {args}.
+Uhttp://www.netscout.net/oneworld/airport_code.htm
+T/tmp/weather-codes.html
+X86400
+*
+S<b>Code</b>
+S"><td>{args}
+Vrest
+C<
+S<td>
+Vcountry
+C</td>
+S<td>
+Vcode
+C<
+# Now we take that code and do a weather lookup on the weather site.
+#
+ECouldn't find Canadian weather for {args}{rest}, {country} [{code}].
+Uhttp://text.www.weatheroffice.ec.gc.ca/forecast/city_e.html?{code}&b_templatePrint=true
+X600
+T/tmp/weather-{code}.html
+*
+S<br clear="all">
+Smscc
+Sh1>
+Vwhere
+C<
+Sstrong>Condition
+S>
+S:
+Vcondition
+C<
+Sstrong>Temp
+S>
+S:
+Vtemp
+C&deg
+OWeather for {where} [{code}], {condition} - {temp} degrees.

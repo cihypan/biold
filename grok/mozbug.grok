@@ -1,0 +1,18 @@
+# $Id: mozbug.grok,v 1.1 2003/04/24 17:09:11 idcmp Exp $
+ELastest Mozilla Bug is that Bugzilla is broken. :-/
+Uhttp://bugzilla.mozilla.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=RESOLVED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=1&votes=&chfield=%5BBug+creation%5D&chfieldfrom=&chfieldto=Now&chfieldvalue=&product=Browser&product=MailNews&short_desc=&short_desc_type=substring&long_desc=&long_desc_type=substring&bug_file_loc=&bug_file_loc_type=substring&status_whiteboard=&status_whiteboard_type=substring&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit&newqueryname=&order=Reuse+same+sort+as+last+time
+X60
+T/tmp/mozbug.html
+*
+S<tr class=
+S</td>
+S</td>
+S</td>
+S</td>
+S</td>
+S</td>
+S</td>
+S<td>
+Vbug
+C<
+OLatest Mozilla Bug: "{bug}"

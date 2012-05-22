@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s1="http://www.worldwidedesktop.com/spellcheck/SpellCheckResult.xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.worldwidedesktop.com/spellcheck" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.worldwidedesktop.com/spellcheck" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.worldwidedesktop.com/spellcheck">
+      <s:import namespace="http://www.worldwidedesktop.com/spellcheck/SpellCheckResult.xsd" />
+      <s:element name="SpellCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TextToCheck" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SpellCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SpellCheckResult" type="s1:corrections" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MSSpellCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TextToCheck" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MSSpellCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MSSpellCheckResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSpellCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TextToCheck" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSpellCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSpellCheckResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="corrections" nillable="true" type="s1:corrections" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.worldwidedesktop.com/spellcheck/SpellCheckResult.xsd">
+      <s:complexType name="corrections">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="correction" type="s1:correctionsCorrection" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="correctionsCorrection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="word" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="suggestions" type="s1:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="suggestion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="SpellCheckSoapIn">
+    <part name="parameters" element="s0:SpellCheck" />
+  </message>
+  <message name="SpellCheckSoapOut">
+    <part name="parameters" element="s0:SpellCheckResponse" />
+  </message>
+  <message name="MSSpellCheckSoapIn">
+    <part name="parameters" element="s0:MSSpellCheck" />
+  </message>
+  <message name="MSSpellCheckSoapOut">
+    <part name="parameters" element="s0:MSSpellCheckResponse" />
+  </message>
+  <message name="WSpellCheckSoapIn">
+    <part name="parameters" element="s0:WSpellCheck" />
+  </message>
+  <message name="WSpellCheckSoapOut">
+    <part name="parameters" element="s0:WSpellCheckResponse" />
+  </message>
+  <message name="SpellCheckHttpGetIn">
+    <part name="LicenseText" type="s:string" />
+    <part name="TextToCheck" type="s:string" />
+  </message>
+  <message name="SpellCheckHttpGetOut">
+    <part name="Body" element="s0:corrections" />
+  </message>
+  <message name="MSSpellCheckHttpGetIn">
+    <part name="LicenseText" type="s:string" />
+    <part name="TextToCheck" type="s:string" />
+  </message>
+  <message name="MSSpellCheckHttpGetOut">
+    <part name="Body" />
+  </message>
+  <message name="WSpellCheckHttpGetIn">
+    <part name="LicenseText" type="s:string" />
+    <part name="TextToCheck" type="s:string" />
+  </message>
+  <message name="WSpellCheckHttpGetOut">
+    <part name="Body" />
+  </message>
+  <message name="SpellCheckHttpPostIn">
+    <part name="LicenseText" type="s:string" />
+    <part name="TextToCheck" type="s:string" />
+  </message>
+  <message name="SpellCheckHttpPostOut">
+    <part name="Body" element="s0:corrections" />
+  </message>
+  <message name="MSSpellCheckHttpPostIn">
+    <part name="LicenseText" type="s:string" />
+    <part name="TextToCheck" type="s:string" />
+  </message>
+  <message name="MSSpellCheckHttpPostOut">
+    <part name="Body" />
+  </message>
+  <message name="WSpellCheckHttpPostIn">
+    <part name="LicenseText" type="s:string" />
+    <part name="TextToCheck" type="s:string" />
+  </message>
+  <message name="WSpellCheckHttpPostOut">
+    <part name="Body" />
+  </message>
+  <portType name="SpellCheckServiceSoap">
+    <operation name="SpellCheck">
+      <documentation>Spell check a word or multiple words</documentation>
+      <input message="s0:SpellCheckSoapIn" />
+      <output message="s0:SpellCheckSoapOut" />
+    </operation>
+    <operation name="MSSpellCheck">
+      <documentation>Spell check a word or multiple words (Works best with MSSOAP 2.0) </documentation>
+      <input message="s0:MSSpellCheckSoapIn" />
+      <output message="s0:MSSpellCheckSoapOut" />
+    </operation>
+    <operation name="WSpellCheck">
+      <input message="s0:WSpellCheckSoapIn" />
+      <output message="s0:WSpellCheckSoapOut" />
+    </operation>
+  </portType>
+  <portType name="SpellCheckServiceHttpGet">
+    <operation name="SpellCheck">
+      <documentation>Spell check a word or multiple words</documentation>
+      <input message="s0:SpellCheckHttpGetIn" />
+      <output message="s0:SpellCheckHttpGetOut" />
+    </operation>
+    <operation name="MSSpellCheck">
+      <documentation>Spell check a word or multiple words (Works best with MSSOAP 2.0) </documentation>
+      <input message="s0:MSSpellCheckHttpGetIn" />
+      <output message="s0:MSSpellCheckHttpGetOut" />
+    </operation>
+    <operation name="WSpellCheck">
+      <input message="s0:WSpellCheckHttpGetIn" />
+      <output message="s0:WSpellCheckHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="SpellCheckServiceHttpPost">
+    <operation name="SpellCheck">
+      <documentation>Spell check a word or multiple words</documentation>
+      <input message="s0:SpellCheckHttpPostIn" />
+      <output message="s0:SpellCheckHttpPostOut" />
+    </operation>
+    <operation name="MSSpellCheck">
+      <documentation>Spell check a word or multiple words (Works best with MSSOAP 2.0) </documentation>
+      <input message="s0:MSSpellCheckHttpPostIn" />
+      <output message="s0:MSSpellCheckHttpPostOut" />
+    </operation>
+    <operation name="WSpellCheck">
+      <input message="s0:WSpellCheckHttpPostIn" />
+      <output message="s0:WSpellCheckHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="SpellCheckServiceSoap" type="s0:SpellCheckServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="SpellCheck">
+      <soap:operation soapAction="http://www.worldwidedesktop.com/spellcheck/SpellCheck" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="MSSpellCheck">
+      <soap:operation soapAction="http://www.worldwidedesktop.com/spellcheck/MSSpellCheck" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="WSpellCheck">
+      <soap:operation soapAction="http://www.worldwidedesktop.com/spellcheck/WSpellCheck" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="SpellCheckServiceHttpGet" type="s0:SpellCheckServiceHttpGet">
+    <http:binding verb="GET" />
+    <operation name="SpellCheck">
+      <http:operation location="/SpellCheck" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="MSSpellCheck">
+      <http:operation location="/MSSpellCheck" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:content part="Body" type="text/xml" />
+      </output>
+    </operation>
+    <operation name="WSpellCheck">
+      <http:operation location="/WSpellCheck" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:content part="Body" type="text/xml" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="SpellCheckServiceHttpPost" type="s0:SpellCheckServiceHttpPost">
+    <http:binding verb="POST" />
+    <operation name="SpellCheck">
+      <http:operation location="/SpellCheck" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="MSSpellCheck">
+      <http:operation location="/MSSpellCheck" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:content part="Body" type="text/xml" />
+      </output>
+    </operation>
+    <operation name="WSpellCheck">
+      <http:operation location="/WSpellCheck" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:content part="Body" type="text/xml" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SpellCheckService">
+    <port name="SpellCheckServiceSoap" binding="s0:SpellCheckServiceSoap">
+      <soap:address location="http://www.worldwidedesktop.com/spellcheck/spellcheckservice.asmx" />
+    </port>
+    <port name="SpellCheckServiceHttpGet" binding="s0:SpellCheckServiceHttpGet">
+      <http:address location="http://www.worldwidedesktop.com/spellcheck/spellcheckservice.asmx" />
+    </port>
+    <port name="SpellCheckServiceHttpPost" binding="s0:SpellCheckServiceHttpPost">
+      <http:address location="http://www.worldwidedesktop.com/spellcheck/spellcheckservice.asmx" />
+    </port>
+  </service>
+</definitions>

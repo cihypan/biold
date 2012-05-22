@@ -1,0 +1,13 @@
+# $Id: cert.grok,v 1.1 2003/04/25 20:13:01 idcmp Exp $
+ECA-2003-01: Multiple Vulnerabilities in Stupid People
+Uhttp://www.cert.org/advisories/
+X3600
+T/tmp/cert.html
+*
+S<a name="20
+S<a href=/advisor
+S>
+Vtitle
+C<
+OLatest CERT advisory: {title}
+

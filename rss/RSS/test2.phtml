@@ -1,0 +1,43 @@
+<?php
+header("Content-type: text/plain");
+
+print "Grabbing channel data\n";
+$file = 'technology.rss';
+$data = implode("",file($file));
+$size = strlen($data);
+print "Searching [$size] bytes of data.\n";
+
+include("class.RSS.php");
+$rss = new RSS($data);
+
+$count = $rss->getCount();
+print "Class parsed [$count] channels\n";
+
+for ($x=0;$x<$count;$x++)
+{
+	$info = $rss->getChannelInfo($x);
+	while ( list ($tagName,$tagVal) = each ($info) )
+	{
+		print "Channel [$x] [$tagName]: [$tagVal]\n";
+	}
+}
+
+print "\nItem information\n";
+$allItems = $rss->getAllItems();
+$itemCount = count($allItems);
+
+print "All channels combined have [$itemCount] items\n\n";
+
+print "If you're using the default iSyndicate 'technology.rss' file\n";
+print "for this demo, don't bother looking for the descriptions, as\n";
+print "iSyndicate doesn't use them. They are, after all, optional.\n";
+
+for($y=0;$y<$itemCount;$y++)
+{
+	print "\n\nItem [$y]:\n";
+	print "[$y]: Title: " . $allItems[$y]['TITLE'];
+	print "\n[$y]: Link : " . $allItems[$y]['LINK'];
+	print "\n[$y]: Desc : " . $allItems[$y]['DESCRIPTION'];
+}
+
+?>
