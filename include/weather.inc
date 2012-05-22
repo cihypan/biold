@@ -49,17 +49,17 @@ function weather_fn(&$bot, $nick, $ident, $host, $dest, $text) {
 		if (is_numeric($city_array_city))
 			{
 			// just a zip code
-		    	$json_string = file_get_contents("http://api.wunderground.com/api/e77ef82b0e5bcffe/almanac/forecast/conditions/q/".$city_array_city.".json");
+		    	$json_string = file_get_contents("http://api.wunderground.com/api/xxxx_insert_your_api_key_xxxxxxx/almanac/forecast/conditions/q/".$city_array_city.".json");
 			}
 		else
 			{
 		if ($city_array_country <> "") 
 			{
-			$json_string = file_get_contents("http://api.wunderground.com/api/e77ef82b0e5bcffe/geolookup/almanac/forecast/conditions/q/".$city_array_country."/".$city_array_city.".json");
+			$json_string = file_get_contents("http://api.wunderground.com/api/xxxx_insert_your_api_key_xxxxxxx/geolookup/almanac/forecast/conditions/q/".$city_array_country."/".$city_array_city.".json");
 			}
 		else 
 			{
-			$json_string = file_get_contents("http://api.wunderground.com/api/e77ef82b0e5bcffe/geolookup/almanac/forecast/conditions/q/IA/".$city_txt.".json");
+			$json_string = file_get_contents("http://api.wunderground.com/api/xxxx_insert_your_api_key_xxxxxxx/geolookup/almanac/forecast/conditions/q/IA/".$city_txt.".json");
 			}
 			}
 
@@ -97,7 +97,7 @@ function weather_fn(&$bot, $nick, $ident, $host, $dest, $text) {
 		    // change default to first record found
 		    $result_url = $parsed_json["response"]["results"][0]["l"];
 		
-		    $json_string = file_get_contents("http://api.wunderground.com/api/e77ef82b0e5bcffe/almanac/forecast/conditions".$result_url.".json");
+		    $json_string = file_get_contents("http://api.wunderground.com/api/xxxx_insert_your_api_key_xxxxxxx/almanac/forecast/conditions".$result_url.".json");
 		    $parsed_json = json_decode($json_string,true);
 		
 		    print_r($parsed_json);
