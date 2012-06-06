@@ -248,7 +248,7 @@ function google_ticker_fn($ticker) {
 
 	// <span class="pr">
 	// <span id="ref_22144_l">146.90</span>
-	$stock_pattern='/<span class=\"pr\">.<span id=\"ref_[0-9]{2,9}_l\">([0-9.]+)<\/span>.<\/span>/s';
+	$stock_pattern='/<span class=\"pr\">.<span id=\"ref_[0-9]{2,20}_l\">([0-9.]+)<\/span>.<\/span>/s';
 	if (@preg_match ($stock_pattern, $result, $stock))
        	{
 	// print_r($stock);
@@ -256,7 +256,7 @@ function google_ticker_fn($ticker) {
        	}
 
 	// <span class="ch bld"><span class="chg" id="ref_22144_c">+0.02</span>
-	$stock_pattern='/<span class=\"ch bld\"><span class=\"ch[gr]\" id=\"ref_[0-9]{2,9}_c\">(.*)<\/span>/';
+	$stock_pattern='/<span class=\"ch bld\"><span class=\"ch[gr]\" id=\"ref_[0-9]{2,20}_c\">(.*)<\/span>/';
 	if (@preg_match_all ($stock_pattern, $result, $stock))
         {
         // print_r($stock);
@@ -264,7 +264,7 @@ function google_ticker_fn($ticker) {
         }
 
 	// <span class="chg" id="ref_22144_cp">(0.01%)</span>
-	$stock_pattern='/<span class=\"ch[gr]\" id=\"ref_[0-9]{2,9}_cp\">(.*)<\/span>/';
+	$stock_pattern='/<span class=\"ch[gr]\" id=\"ref_[0-9]{2,20}_cp\">(.*)<\/span>/';
 	if (@preg_match_all ($stock_pattern, $result, $stock))
         {
         // print_r($stock);

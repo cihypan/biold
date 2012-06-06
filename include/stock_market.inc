@@ -57,7 +57,7 @@ function get_ticker_price($ticker) {
     // </span>
     // <div class=mdata-dis>
 
-        $stock_pattern='/<span id=\"ref_[0-9]{2,9}_ltt\">.([0-9]{1,2}):([0-9]{1,2})(AM|PM) E[DS]T.<\/span>.<\/span>.<div class=mdata-dis>/s';
+        $stock_pattern='/<span id=\"ref_[0-9]{2,20}_ltt\">.([0-9]{1,2}):([0-9]{1,2})(AM|PM) E[DS]T.<\/span>.<\/span>.<div class=mdata-dis>/s';
         if (@preg_match ($stock_pattern, $result, $stock))
         {
         // print_r($stock);
@@ -92,7 +92,7 @@ function get_ticker_price($ticker) {
 
     // <span class="pr">
     // <span id="ref_22144_l">146.90</span>
-    $stock_pattern='/<span class=\"pr\">.<span id=\"ref_[0-9]{2,9}_l\">([0-9.]+)<\/span>.<\/span>/s';
+    $stock_pattern='/<span class=\"pr\">.<span id=\"ref_[0-9]{2,20}_l\">([0-9.]+)<\/span>.<\/span>/s';
     if (@preg_match ($stock_pattern, $result, $stock))
            {
     // print_r($stock);
@@ -150,7 +150,7 @@ function get_ticker_price_display($ticker) {
     // </span>
     // <div class=mdata-dis>
 
-        $stock_pattern='/<span id=\"ref_[0-9]{2,9}_ltt\">.([0-9]{1,2}):([0-9]{1,2})(AM|PM) E[DS]T.<\/span>.<\/span>.<div class=mdata-dis>/s';
+        $stock_pattern='/<span id=\"ref_[0-9]{2,20}_ltt\">.([0-9]{1,2}):([0-9]{1,2})(AM|PM) E[DS]T.<\/span>.<\/span>.<div class=mdata-dis>/s';
         if (@preg_match ($stock_pattern, $result, $stock))
         {
         // print_r($stock);
@@ -185,7 +185,7 @@ function get_ticker_price_display($ticker) {
 
     // <span class="pr">
     // <span id="ref_22144_l">146.90</span>
-    $stock_pattern='/<span class=\"pr\">.<span id=\"ref_[0-9]{2,9}_l\">([0-9.]+)<\/span>.<\/span>/s';
+    $stock_pattern='/<span class=\"pr\">.<span id=\"ref_[0-9]{2,20}_l\">([0-9.]+)<\/span>.<\/span>/s';
     if (@preg_match ($stock_pattern, $result, $stock))
            {
     // print_r($stock);
