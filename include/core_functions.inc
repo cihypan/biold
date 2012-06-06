@@ -1,4 +1,4 @@
-<?
+<?php
 function identifyNickServ(&$bot, $nick, $ident, $host, $dest, $text) {
   if ($nick == "NickServ" && $dest == ircConf::get("botNick") &&
   eregi("This nick is owned", $text)) {

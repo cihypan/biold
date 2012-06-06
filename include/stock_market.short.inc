@@ -1,4 +1,4 @@
-<?
+<?php
 // stock market fantasy game addon
 // 
 // functions in this include module : 

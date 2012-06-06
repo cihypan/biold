@@ -1,4 +1,4 @@
-<?
+<?php
 function http_build_query($a,$b='',$c=0){
 	if (!is_array($a)) return false;
 	foreach ((array)$a as $k=>$v){

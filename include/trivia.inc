@@ -1,4 +1,4 @@
-<?
+<?php
 function trivia_fn(&$bot, $nick, $ident, $host, $dest, $text) {
    global $score_arr, $answered_flag, $answered_trivia_arr;
 

@@ -1,4 +1,4 @@
-<?
+<?php
 
 /** Sample tool: "!nslookup 127.0.0.1" OR "!nslookup www.php.net" */
 /** NOTE:

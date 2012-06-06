@@ -1,4 +1,4 @@
-<?
+<?php
 function currency_fn(&$bot, $nick, $ident, $host, $dest, $text) {
    if (trim(strToLower(substr($text, 0, 8))) == "!convert") {
 	if (strlen(trim($text)) < 9) 

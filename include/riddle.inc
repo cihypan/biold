@@ -1,4 +1,4 @@
-<?
+<?php
 function get_riddle (&$bot, $nick, $ident, $host, $dest, $text) {
    if (trim(strToLower(substr($text, 0, 14))) == "!riddle answer") {
 	

@@ -1,4 +1,4 @@
-<?
+<?php
 function addquote_fn (&$bot, $nick, $ident, $host, $dest, $text) {
 	if (trim(strToLower(substr($text, 0, 9))) == "!addquote") {
 		if (strlen(trim($text)) < 9) {

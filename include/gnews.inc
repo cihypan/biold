@@ -1,4 +1,4 @@
-<?
+<?php
 // originally written by julian_bond@voidstar.com
 // adapted to subtility by bioh
 

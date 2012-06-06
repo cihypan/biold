@@ -1,4 +1,4 @@
-<?
+<?php
 function weather_fn(&$bot, $nick, $ident, $host, $dest, $text) {
    global $zipcode, $sorm;
   if ((strcasecmp($nick, "teebag") == 0)) 

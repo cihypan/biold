@@ -1,4 +1,4 @@
-<?
+<?php
 function ball_fn(&$bot, $nick, $ident, $host, $dest, $text) {
    if (trim(strToLower(substr($text, 0, 2))) == "!8")
         {

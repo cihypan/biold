@@ -1,4 +1,4 @@
-<?
+<?php
 function get_stfu (&$bot, $nick, $ident, $host, $dest, $text) {
    if (trim(strToLower(substr($text, 0, 5))) == "!stfu") {
 	$stfu_who = trim(substr($text, 6));

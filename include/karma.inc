@@ -1,4 +1,4 @@
-<?
+<?php
 function karma_fn(&$bot, $nick, $ident, $host, $dest, $text) {
 	if ((strcasecmp($nick, "teebag") == 0)) {
 		return;

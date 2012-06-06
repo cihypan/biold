@@ -1,4 +1,4 @@
-<?
+<?php
 function html_entity_decode_utf8($string) {
 	static $trans_tbl;
        

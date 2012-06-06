@@ -1,4 +1,4 @@
-<?
+<?php
 function htmlspecialchars_decode_php4($string, $quote_style = ENT_COMPAT) {
 	return strtr($string, array_flip(get_html_translation_table(HTML_SPECIALCHARS, $quote_style)));
 	}

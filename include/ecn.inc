@@ -1,4 +1,4 @@
-<?
+<?php
 function ecn($ticker) {
 
 // since yahoo shut off their ECN service, its time to move on
