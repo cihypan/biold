@@ -39,33 +39,26 @@
             if(!empty($from))
                 $this->_from=$from;
 
-            //$host="www.iraqidinar.org";
             $host="www.xe.com";
-            $fp = @fsockopen($host, 80, $errno, $errstr, 30);
-            if (!$fp)
-            {
-                $this->_error="$errstr ($errno)<br />\n";
-                return false;
-            }
-            else
-            {
-                //$file="/conversiontool2.asp";
-                $file="/ucc/convert/";
-                //$str = "?amount=".$this->_amt."&ConvertFrom=".$this->_from."&ConvertTo=".$this->_to;
-                $str = "?language=xe&Amount=".$this->_amt."&From=".$this->_from."&To=".$this->_to;
-                $out = "GET ".$file.$str." HTTP/1.0\r\n";
-                $out .= "Host: $host\r\n";
-                $out .= "Connection: Close\r\n\r\n";
+            $file="/currencyconverter/convert/";
+            $str = "?Amount=".$this->_amt."&From=".$this->_from."&To=".$this->_to;
 
-                @fputs($fp, $out);
-                while (!@feof($fp))
-                {
-                    $data.= @fgets($fp, 128);
-                }
-                @fclose($fp);
-                
-                @preg_match("/^(.*?)\r?\n\r?\n(.*)/s", $data, $match);
-                $data =$match[2];
+                //$str = "?amount=".$this->_amt."&ConvertFrom=".$this->_from."&ConvertTo=".$this->_to;
+		// http://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CAD
+	// hack it :/
+	// wget --user-agent="Mozilla/5.0 (Windows NT 5.2; rv:2.0.1) Gecko/20100101 Firefox/4.0.1" "http://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CAD"
+
+		$wget_command = "wget -O /tmp/xe.com.txt -nv --user-agent=\"Mozilla/5.0 (Windows NT 5.2; rv:2.0.1) Gecko/20100101 Firefox/4.0.1\" ";
+		$url = "\"http://".$host.$file.$str."\"";
+
+		$command = $wget_command.$url;
+
+		exec ($command);
+
+		$data = file_get_contents("/tmp/xe.com.txt");
+
+                // @preg_match("/^(.*?)\r?\n\r?\n(.*)/s", $data, $match);
+		
                 $search = array ("'<script[^>]*?>.*?</script>'si",  // Strip out javascript
                                  "'<[\/\!]*?[^<>]*?>'si",           // Strip out HTML tags
                                  "'([\r\n])[\s]+'",                 // Strip out white space
@@ -98,11 +91,15 @@
 		// print ("DEBUG DATA for CURRENCY :" . $data . " -- END DEBUG");
                 @preg_match_all("/(\d[^\.]*(\.\d+)?)/",$data,$mathces);
 		
-		// print_r($mathces);
+		print_r($mathces);
+		//            [2] => 1.00
+		//            [3] => 1.03220
+		//            [4] => 1 USD = 1.03220
+		//            [5] => 1 CAD = 0.968803
+
 
                 $return=preg_replace("/[^\d\.]*/","",$mathces[0][3]);
                 return (double)$return;
-            }
         }
 	function country_to_currency ($country)
 		{

@@ -5,7 +5,7 @@ Uhttp://www.urbandictionary.com/define.php?term={args}
 X86400
 T/tmp/urban-{args}.html
 *
-S<div class="definition">
+S<div class='meaning'>
 Vdefinition
 C</div>
 O{args}: {definition}

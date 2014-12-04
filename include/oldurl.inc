@@ -320,7 +320,7 @@ function old_fn(&$bot, $nick, $ident, $host, $dest, $text) {
 		return;}
 
 	if (stristr($url, 'http')) { 
-		$domain_url_extract_pattern = '/http:\/\/[^\/]*\//';
+		$domain_url_extract_pattern = '/(http|https):\/\/[^\/]*\//';
 		if (@preg_match ($domain_url_extract_pattern, $url, $domain_match_array)) {
 			$domain_txt = $domain_match_array[0] . " - ";
 			// get rid of http:// ... /
